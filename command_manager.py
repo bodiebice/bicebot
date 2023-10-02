@@ -1,5 +1,6 @@
 from command import (
-  poc
+  poc,
+  tasks
   # put command scripts into this here
 )
 import logging
@@ -12,6 +13,7 @@ def init_commands(bot: bicebot.BiceBot):
   logger.info("Registering commands to command tree")
   #Area to Register Commands
   tree.add_command(poc.poc)
+  tree.add_command(tasks.getTasks)
   logger.info("Done registering all commands")
 
   logger.info("Registering chat-based commands")

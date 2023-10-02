@@ -1,4 +1,5 @@
 import discord
+import config
 from discord.ext import commands
 
 intents = discord.Intents.default()
@@ -6,7 +7,7 @@ intents.message_content = True
 
 bot = commands.Bot(command_prefix = '$', intents = intents)
 
-key = "MTA2MzUwOTMyMTI2ODM0Njk2MQ.GOomV0.iAba57Se68tvcOEJAxxG2tDfiFi7Ktb06GEp8Q"
+key = config.get(config.CONFIG_BOT_TOKEN)
 # event listen for when bot is running
 @bot.event
 async def on_ready():
