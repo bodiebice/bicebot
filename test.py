@@ -6,7 +6,7 @@ intents.message_content = True
 
 bot = commands.Bot(command_prefix = '$', intents = intents)
 
-key = "MTA2MzUwOTMyMTI2ODM0Njk2MQ.GOomV0.iAba57Se68tvcOEJAxxG2tDfiFi7Ktb06GEp8Q"
+key = "INSERT_KEY_HERE"
 # event listen for when bot is running
 @bot.event
 async def on_ready():
