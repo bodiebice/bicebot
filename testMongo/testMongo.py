@@ -5,8 +5,7 @@ from pandas import DataFrame
 
 
 def loadDatabase():
-  CONNECTION_STRING = "mongodb+srv://bodiebice:<8HJ6kVLOAMMZeuFl>@botbotcluster.fjahywb.mongodb.net/"
-  uri = "mongodb+srv://bodiebice:JB1524@botbotcluster.fjahywb.mongodb.net/?retryWrites=true&w=majority"
+  uri = "INSERT_STRING_HERE"
   client = MongoClient(uri, server_api = ServerApi('1'))
 
   try:
